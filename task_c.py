@@ -5,7 +5,7 @@ class Solution_c:
     def stepCalculation(self) -> np.ndarray:
         memory = {}
         results = np.empty(10000, int)
-        #add regular value to the memory
+        #add regular value(2**n) to the memory
         num = 0
         while math.pow(2, num) <= 10000:
             index = int(math.pow(2, num))
