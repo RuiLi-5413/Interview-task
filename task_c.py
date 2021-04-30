@@ -1,5 +1,6 @@
 import numpy as np
 import math
+import time
 
 class Solution_c:
     def stepCalculation(self) -> np.ndarray:
@@ -40,4 +41,7 @@ class Solution_c:
 if __name__ == "__main__":
     # The index of results is corresponding to the real number-1
     solution = Solution_c()
-    results = solution.stepCalculation()
+    start = time.time()
+    solution.stepCalculation()
+    end = time.time()
+    print(end-start)
